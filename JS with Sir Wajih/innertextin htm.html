@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   
+</head>
+<body>
+    <h1>HTML innertext and innerHTML difference</h1>
+    <!-- <p>&lt;div id="example"&gt;This is &lt;strong&gt;some&lt;/strong&gt; example text.&lt;/div&gt;</p>
+    "This is &lt;strong&gt;some&lt;/strong&gt; example text." -->
+    <div id="myDiv">
+        <p>This is <strong>bold</strong> text.</p>
+      </div>
+      <script>
+        var myDiv = document.getElementById('myDiv');
+console.log(myDiv.innerHTML);
+var myDiv2 = document.getElementById('myDiv');
+console.log(myDiv2.innerText);
+      </script>
+</body>
+</html>

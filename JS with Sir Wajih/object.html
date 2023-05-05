@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <script>
+        var account = {
+            accnum : "HBL12345678",
+            Balance : 200,
+            BankNAme : "HBL",
+            accounttitle : "Khateeb Ur Rehman",
+            // write methods code for this project
+            deposite : function(amount){
+                return this.Balance +=amount;
+            },
+
+            widthdraw: function(deduction){
+               
+                if(deduction>this.Balance)
+                {
+                    alert("insufficient amoount");
+                }
+                else{
+                    return this.Balance -=deduction;
+                }
+
+            },
+
+        }
+        var totalbalnce = account.deposite(parseInt(prompt("Enter the amount you want to recharge")));
+        var withdrawal = account.widthdraw(parseInt(prompt("Enter amount you want to with draw")));
+        document.write("your current balance is ====" + account.Balance + "<br>");
+        document.write("Your available balance is ===" + totalbalnce);
+        // document.write("your withdrawal amount is " + withdrawal);
+        document.write("your withdrawal amount is " + account.widthdraw().deduction);
+        document.write("Your remaing balace is "+ account.Balance);
+    </script> -->
+
+
+    
+    <script>
+// json datatype
+// object with constructor
+// browser controlling
+// plain-vanilla function
+    </script>
+
+
+    <!-- <script>
+        var plan1Name = "Basic";
+        var plan1Price = 3.99;
+        var Plan1Space = 100;
+        var plan1Data = 1000;
+        var plan1Pages = 10;
+        var plan2Name = "professional";
+        var plan2Price = 5.99;
+        var Plan2Space = 500;
+        var plan2Data = 5000;
+        var plan2Pages = 50;
+        var plan3Name = "Ultimate";
+        var plan3Price = 9.99;
+        var Plan3Space = 2000;
+        var plan3Data = 20000;
+        var plan3Pages = 500;
+        alert("the cost of the " + plan1Name + " package is $" + plan1Price + "/month.");
+
+        var plan1 = {
+            Name : "Basic",
+            Price : 3.99,
+            Space : 100,
+            Transfer : 1000,
+            Pages : 10
+
+        };
+        var plan2 = {
+            Name : "Professional",
+            Price : 5.99,
+            Space : 500,
+            Transfer : 5000,
+            Pages : 50
+
+        };
+        var plan3 = {
+            Name : "Ultimate",
+            Price : 9.99,
+            Space : 2000,
+            Transfer : 20000,
+            Pages : 500
+
+        };
+        alert("the " + plan1.Name + " Hosting price is $" + plan1.Price + "/month."  + " Storage space is"  + plan1.Space +"GB" );
+        // object properties
+        // changing object values (both integer or string allowed)
+        plan1.Price = 6.99;
+        plan1.Space = 2000;
+        plan1.Transfer = "not included in this plan"
+        // change object value to an array
+        plan1.Pages = [30, 35];
+        
+
+        alert("the " + plan1.Name + " Hosting price is $" + plan1.Price + "/month."  + " Storage space is"  + plan1.Space +"GB" + " But transfer rate is " + " " + plan1.Transfer);
+
+
+    </script> -->
+
+    <!-- Object method example -->
+    <script>
+var plan1 = {
+            Name : "Basic",
+            Price : 3.99,
+            Space : 100,
+            Transfer : 1000,
+            Pages : 10,
+            discountMonth : [6, 7],
+            calcannual : function(percentIfDisc){
+                var bestPrice = plan1.Price;
+                var currDate = new Date();
+                var thisMo = currDate.getMonth();
+                for(var i = 0; i < plan1.discountMonth.length; i++){
+                    if(plan1.discountMonth[i]===thisMo){
+                        bestPrice = plan1.Price * percentIfDisc;
+                        break;
+
+                    }
+                }
+                return bestPrice * 12;
+            }
+            
+
+        };
+
+       
+       /*
+        function calAnnual(){
+            var bestPrice = plan1.Price;
+            var currDate = new Date();
+            var thisMo = currDate.getMonth();
+            for (var i=0; i < plan1.discountMonth.length; i++)
+            {
+                if(plan1.discountMonth[i]===thisMo){
+                    bestPrice = plan1.Price * .8;
+                    break;
+                }
+            }
+            return bestPrice *12;
+        }
+        var annualPrice = calAnnual();
+
+
+        function calcAnnual(percentIfDisc){
+            var bestPrice = plan1.Price;
+            var currDate = new Date();
+            var thisMo = currDate.getMonth();
+            for(var i = 0; i < plan1.discountMonth.length; i++){
+                if(plan1.discountMonth[i]===thisMo){
+                    bestPrice = plan1.Price*percentIfDisc;
+                    break;
+                }
+            }
+            return bestPrice * 12;
+        }
+
+
+var annual_Price = calcAnnual(.20);
+
+*/
+    </script>
+    <!-- Constructors in JS -->
+    <script>
+        function Bankaccount(accountn0,acconttitle,iban,currency,balance,bankname)
+        {
+            this.Account_number = accountn0;
+            this.acconttitle =acconttitle;
+            this.iban_num = iban;
+            this.balance = balance;
+            this.currency = currency;
+            this.Bank_Name = bankname;
+
+        }
+        var savingaccount = new Bankaccount('114774', 'Khateeb Ur Rehman', 'HBL45178278',555,555);
+        var currentaccount = new Bankaccount('55482246', 'Khateeb ur rehman', 'HBl5846875', 'PKR', 545,'HBL PK');
+// var nnn= new Bankaccount('','',)
+
+    </script>
+    <button onclick="alert(savingaccount.balance)">click me</button>
+    <button onclick="alert('this is your saving account and acount number is ' + currentaccount.Account_number +'Account holder name is ' + currentaccount.acconttitle + 'and IBAN number is' + currentaccount.iban_num + 'your balance is' + currentaccount.balance + 'bankname is ' + currentaccount.Bank_Name)">Click me for cheak saving</button>
+    <!-- write a program for page 226 hosting plan in html css and js by using dom, if-else, and ? -->
+    <!-- make todo app  -->
+    <!-- cretae element
+    remove child,
+append child,
+          -->
+</body>
+</html>

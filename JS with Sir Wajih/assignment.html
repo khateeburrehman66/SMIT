@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title></title>
+
+</head>
+
+<body>
+    <div id="my_div" style="visibility: hidden">
+
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus molestiae qui voluptatibus cum praesentium
+            atque! Eaque suscipit odio, veritatis quae dolorum, cumque aliquam deleniti nostrum inventore optio
+            doloremque nam assumenda.
+
+        </p>
+    </div>
+    <button onclick="showHid()">Click</button>
+    <!-- Cheak this function again by using visiblilty property-->
+    <script>
+function showHid(){
+    var x=document.getElementById("my_div");
+    if(x.style.visibility==="visible")
+    {
+        x.style.visibility="hidden";
+    }
+    else{
+        x.style.visibility="visible";
+    }
+}
+// ========has attribute=================
+var target = document.getElementById("my_div");
+var hasClass = target.hasAttribute("class");
+console.log(hasClass);
+/*return false*/
+var target1 = document.getElementById("my_div");
+var hasClass1 = target.hasAttribute("id");
+console.log(hasClass1);
+// ==================get Attribute================
+var target1A = document.getElementById("my_div");
+var hasClass1A = target.getAttribute("id");
+console.log(hasClass1A);
+var target1A1 = document.getElementById("my_div");
+var hasClass1A1 = target.getAttribute("class");
+console.log(hasClass1A1);
+// ==================set Attribute================
+var target1A2 = document.getElementById("my_div");
+var hasClass1A2 = target.setAttribute("id");
+console.log(hasClass1A2);
+var target1A12 = document.getElementById("my_div");
+var hasClass1A12 = target.setAttribute("class");
+console.log(hasClass1A12);
+
+// .attribute============
+var target = document.getElementById("my_div").attributes.length;
+hassClass = target.hasAttribute("id");
+alert(target);
+
+    </script>
+
+    
+<!-- function showHid(){
+    var x=document.getElementById("my_div");
+    if(x.style.display==="block")
+    {
+        x.style.display="none";
+    }
+    else{
+        x.style.display="block";
+    }
+}
+    -->
+</body>
+
+</html>
